@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, '/uploads/');
+        cb(null, 'uploads/');
     },
 
     // Use uuid to avoid name collisions —
